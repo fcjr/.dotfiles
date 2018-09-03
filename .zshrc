@@ -1,103 +1,49 @@
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
+export ZSH="/home/fcjr/.oh-my-zsh"
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-ZSH_THEME="afowler"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias petite="/usr/bin/petite ~/chez-init.scm"
-alias zshconfig="vim ~/.zshrc"
-
-#git aliases
-alias ga="git add --all"
-alias gc="git commit -v"
-alias gac="git add --all && commit -v"
-
-#jump alias
-alias j="wd"
-
-#atom should open atom in the CWD...
-alias atom="atom ."
-
-#Python Virtual Env Setup
-alias vinit="sh ~/Documents/PythonVirtualEnvironments/init.sh"
-alias vact="workon"
-alias vdact="deactivate"
-alias vrm="rmvirtualenv"
-alias vls="lsvirtualenv"
-alias vdump="pip freeze | tee requirements.txt"
-
-export WORKON_HOME=~/Documents/PythonVirtualEnvironments/
-source /usr/local/bin/virtualenvwrapper.sh
-
-#AutoEnv Setup
-source /usr/local/opt/autoenv/activate.sh
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to disable command auto-correction.
-# DISABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Set name of the theme to load. Optionally, if you set this to "random"
+# it'll load a random theme each time that oh-my-zsh is loaded.
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
+ZSH_THEME="agnoster"
+DEFAULT_USER="fcjr"
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git wd)
+# Add wisely, as too many plugins slow down shell startup.
+plugins=(
+  git, wd
+)
 
 source $ZSH/oh-my-zsh.sh
 
-# User configuration
-
-export PATH="/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/git/bin"
-
-export PATH="/usr/local/git/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/texbin:$PATH"
-# export MANPATH="/usr/local/man:$MANPATH"
-
+## User configuration
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# Only show current working directory name
+prompt_dir() {
+  prompt_segment blue black '%1~'
+}
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# Disable Auto CD (Fixes issue with running the "go" command in home dir)
+unsetopt autocd
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/dsa_id"
+# Golang Install
+export PATH=$PATH:/usr/local/go/bin
+
+# Docker Setup for WSL ONLY
+# export DOCKER_HOST=tcp://192.168.99.100:2376
+# export DOCKER_CERT_PATH=/mnt/c/Users/fcjr/.docker/machine/certs
+# export DOCKER_TLS_VERIFY=1
+
+# Miniconda3 Setup
+## Allow "conda activate ..." instead of "source activate ..."
+. /home/fcjr/miniconda3/etc/profile.d/conda.sh
+## Add miniconda to the end of path so that when an env is not
+## activated system python is used
+export PATH="$PATH:/home/fcjr/miniconda3/bin"
+
+# Haskell Stack Setup
+export PATH="/home/fcjr/.local/bin:$PATH"
