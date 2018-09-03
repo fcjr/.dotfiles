@@ -1,4 +1,4 @@
-"enable pathogen
+"Enable pathogen
 execute pathogen#infect()
 
 "Sane indents
@@ -9,7 +9,7 @@ autocmd BufReadPost *.ss set filetype=scheme
 au filetype scheme set lisp
 au filetype scheme set autoindent
 
-"Set textwith for LaTeX
+"Set textwidth for LaTeX
 au Bufread,BufNewFile *.tex setlocal textwidth=80
 
 "MAKE VIM PRETTY
@@ -26,6 +26,6 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-"Make Tempfiles to go sain places
+"Make Tempfiles to go sane places
 set backupdir=~/.vimtmpdir,.
 set directory=~/.vimtmpdir,
