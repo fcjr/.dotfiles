@@ -33,11 +33,6 @@ unsetopt autocd
 # Golang Install
 export PATH=$PATH:/usr/local/go/bin
 
-# Docker Setup for WSL ONLY
-# export DOCKER_HOST=tcp://192.168.99.100:2376
-# export DOCKER_CERT_PATH=/mnt/c/Users/fcjr/.docker/machine/certs
-# export DOCKER_TLS_VERIFY=1
-
 # Miniconda3 Setup
 ## Allow "conda activate ..." instead of "source activate ..."
 . /home/fcjr/miniconda3/etc/profile.d/conda.sh
@@ -47,3 +42,11 @@ export PATH="$PATH:/home/fcjr/miniconda3/bin"
 
 # Haskell Stack Setup
 export PATH="/home/fcjr/.local/bin:$PATH"
+
+#WSL Specific Configuration
+if grep -q Microsoft /proc/sys/kernel/osrelease; then
+  # Docker Setup for WSL
+  export DOCKER_HOST=tcp://192.168.99.100:2376
+  export DOCKER_CERT_PATH=/mnt/c/Users/fcjr/.docker/machine/certs
+  export DOCKER_TLS_VERIFY=1
+fi
