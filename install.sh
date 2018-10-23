@@ -48,4 +48,13 @@ if grep -q Microsoft /proc/sys/kernel/osrelease; then
         mv -f /mnt/c/Users/$windowsUsername/AppData/Roaming/Code/User/settings.json{,.old}
         ln -s $PWD/other/vscode_settings.json /mnt/c/Users/$windowsUsername/AppData/Roaming/Code/User/settings.json
     fi
+    #update wsl.conf and link windows ssl keys to wsl
+    if [ -e /etc/wsl.conf ]; then
+        mv -f /etc/wsl.conf{,.old}
+        ln -s $PWD/other/wsl.conf /etc/wsl.conf
+    fi
+    if [ -e ~/.ssh ]
+        mv -f ~/.ssh{,.old}
+        ln -s /mnt/c/User/$windowsUsername/.ssh ~/.ssh
+    fi
 fi

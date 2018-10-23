@@ -34,4 +34,17 @@ if grep -q Microsoft /proc/sys/kernel/osrelease; then
     if [ -e /mnt/c/Users/$windowsUsername/AppData/Roaming/Code/User/settings.json.old ]; then
         mv -f /mnt/c/Users/$windowsUsername/AppData/Roaming/Code/User/settings.json{.old,}
     fi
+    #remove wsl.conf and unlink windows ssl keys to wsl
+    if [ -h /etc/wsl.conf ]; then
+        rm -f /etc/wsl.conf
+    fi
+    if [ -e /etc/wsl.conf.old ]; then
+        mv -f /etc/wsl.conf{.old,}
+    fi
+    if [ -h ~/.ssh ]; then
+        rm -f ~/.ssh
+    fi
+    if [ -e ~/.ssh.old]; then
+        mv ~/.ssh{.old,}
+    fi
 fi
