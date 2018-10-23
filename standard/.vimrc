@@ -1,6 +1,3 @@
-"Enable pathogen
-execute pathogen#infect()
-
 "Sane indents
 filetype plugin indent on
 
@@ -17,7 +14,6 @@ syntax enable
 set background=light
 set number
 set cmdheight=2
-colorscheme solarized
 set cursorline
 
 "Tab = spaces
