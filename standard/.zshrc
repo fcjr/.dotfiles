@@ -50,3 +50,15 @@ if grep -q Microsoft /proc/sys/kernel/osrelease; then
   export DOCKER_CERT_PATH=/mnt/c/Users/fcjr/.docker/machine/certs
   export DOCKER_TLS_VERIFY=1
 fi
+
+
+# Ansible Aliases
+alias ansible-edit='ansible-vault edit --vault-password-file=.VAULT_PASSWORD'
+alias ansible-view='ansible-vault view --vault-password-file=.VAULT_PASSWORD'
+alias a-edit='ansible-edit'
+alias a-view='ansible-view'
+
+# Helpers for quickly handling Proxy settings on OSX
+alias l-list='lsof -i | grep LISTEN'
+alias proxy-off='networksetup -setwebproxystate "Wi-fi" off && networksetup -setsecurewebproxystate "Wi-fi" off'
+alias proxy-on='networksetup -setwebproxystate "Wi-fi" on && networksetup -setsecurewebproxystate "Wi-fi" on'
