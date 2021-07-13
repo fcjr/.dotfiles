@@ -1,15 +1,10 @@
 {
     "telemetry.enableTelemetry": false,
     "workbench.startupEditor": "newUntitledFile",
-    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\wsl.exe",
     "editor.fontFamily": "'Fira Code', Consolas, 'Courier New', monospace",
     "telemetry.enableCrashReporter": false,
     "terminal.integrated.fontFamily": "\"Meslo LG M for Powerline\"",
     "editor.fontLigatures": true,
     "workbench.statusBar.feedback.visible": false,
-    "arduino.additionalUrls": [
-        "http://arduino.esp8266.com/stable/package_esp8266com_index.json"
-    ],
-    "workbench.colorTheme": "One Dark Pro",
-    "python.pythonPath": "C:\\Users\\fcjr\\AppData\\Local\\Programs\\Python\\Python37\\python.exe"
+    "workbench.colorTheme": "One Dark Pro"
 }
