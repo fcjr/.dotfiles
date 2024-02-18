@@ -1,5 +1,6 @@
-brew "neovim"
 brew "stow"
+brew "neovim"
+brew "tmux"
 brew "fnm"
 brew "zoxide"
 brew "fzf"
