@@ -39,6 +39,13 @@ local plugins = {
         'numToStr/Comment.nvim',
         lazy = false,
     },
+    { "mfussenegger/nvim-dap" },
+    {
+        "rcarriga/nvim-dap-ui",
+        dependencies = { "mfussenegger/nvim-dap" }
+    },
+    { "theHamsta/nvim-dap-virtual-text" },
+    { "leoluz/nvim-dap-go" },
 }
 
 require("lazy").setup(plugins, {})
