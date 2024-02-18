@@ -26,7 +26,7 @@ case "$OSTYPE" in
     export PATH="/usr/libexec:$PATH"
   ;;
   linux*)
-    # ...
+    alias code="code --ozone-platform=wayland"
   ;;
 esac
 
