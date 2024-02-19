@@ -1184,6 +1184,30 @@
         "options": {
           "full_name": "proton-drive"
         }
+      },
+      "android-studio": {
+        "version": "2023.1.1.28",
+        "options": {
+          "full_name": "android-studio"
+        }
+      },
+      "zoom": {
+        "version": "5.17.5.29101",
+        "options": {
+          "full_name": "zoom"
+        }
+      },
+      "keybase": {
+        "version": "6.2.5,20240101050825,3bdf76f84a",
+        "options": {
+          "full_name": "keybase"
+        }
+      },
+      "element": {
+        "version": "1.11.58",
+        "options": {
+          "full_name": "element"
+        }
       }
     },
     "tap": {
@@ -1229,7 +1253,7 @@
         "HOMEBREW_PREFIX": "/opt/homebrew",
         "Homebrew/homebrew-core": "api",
         "CLT": "15.1.0.0.1.1700200546",
-        "Xcode": "15.1",
+        "Xcode": "15.2",
         "macOS": "14.3.1"
       }
     }
