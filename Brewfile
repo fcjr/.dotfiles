@@ -15,6 +15,7 @@ brew "go"
 brew "rustup-init"
 
 brew "colima"
+
 brew "docker"
 brew "kubernetes-cli"
 brew "k9s"
@@ -62,5 +63,5 @@ vscode "mikestead.dotenv"
 vscode "johnpapa.vscode-cloak"
 
 brew "mas" if OS.mac?
-mas "Bitwarden", id: 135_277_8147
-mas "Meshtastic", id: 158_643_2531
+mas "Bitwarden", id: 135_277_8147 if OS.mac?
+mas "Meshtastic", id: 158_643_2531 if OS.mac?

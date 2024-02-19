@@ -8,6 +8,7 @@ See Brewfile for a list of applications that need to be installed.  You can inst
 
 ```bash
 brew bundle
+brew services start colima
 ```
 
 Otherwise use your package manager of choice.
