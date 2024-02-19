@@ -22,8 +22,8 @@ case "$OSTYPE" in
   darwin*)
     eval "$(/opt/homebrew/bin/brew shellenv)"
 
-    export JAVA_HOME=$(/usr/libexec/java_home -v 18)
-    export PATH="/usr/libexec:$PATH"
+    # export JAVA_HOME=$(/usr/libexec/java_home -v 18)
+    # export PATH="/usr/libexec:$PATH"
   ;;
   linux*)
     alias code="code --ozone-platform=wayland"
