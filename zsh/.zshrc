@@ -28,6 +28,10 @@ case "$OSTYPE" in
   linux*)
     export PATH="/home/fcjr/.local/share/fnm:$PATH"
 
+    if ! command -v wezterm &> /dev/null; then
+        alias wezterm="flatpak run org.wezfurlong.wezterm"
+    fi
+
     alias code="code --ozone-platform=wayland"
   ;;
 esac
