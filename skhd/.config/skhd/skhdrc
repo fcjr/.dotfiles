@@ -15,5 +15,16 @@ alt + shift - y : yabai -m space --mirror y-axis
 alt + shift - x : yabai -m space --mirror x-axis
 alt + shift - t : yabai -m window --toggle float --grid 4:4:1:1:2:2
 
-alt - return : wezterm cli spawn --new-window &> /dev/null || open /Applications/WezTerm.app
-alt - w : /Applications/Firefox\ Developer\ Edition.app/Contents/MacOS/firefox -new-window
+shift + alt - e : yabai -m space --balance
+shift + alt - f : yabai -m window --toggle zoom-fullscreen
+
+shift + alt - 1 : yabai -m window --space 1
+shift + alt - 2 : yabai -m window --space 2
+shift + alt - 3 : yabai -m window --space 3
+shift + alt - 4 : yabai -m window --space 4
+
+alt - return : ~/.local/bin/wezterm-new-window.sh
+alt - w : ~/.local/bin/firefox-new-window.sh
+
+shift + alt - q : yabai --stop-service
+shift + alt - s : yabai --start-service
