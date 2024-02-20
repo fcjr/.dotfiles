@@ -494,43 +494,43 @@
       "thefuck": {
         "version": "3.32",
         "bottle": {
-          "rebuild": 3,
+          "rebuild": 4,
           "root_url": "https://ghcr.io/v2/homebrew/core",
           "files": {
             "arm64_sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:c0cd4272e6787d23bb980a218f863f7bc6f7054423e9888481cd25aeda9c06a5",
-              "sha256": "c0cd4272e6787d23bb980a218f863f7bc6f7054423e9888481cd25aeda9c06a5"
+              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:2500915b3e5ae0e48eaaeb40ec7cf32a9cf9e5a1d5ee122a8b81fee9e2883e9a",
+              "sha256": "2500915b3e5ae0e48eaaeb40ec7cf32a9cf9e5a1d5ee122a8b81fee9e2883e9a"
             },
             "arm64_ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:33a477185117d10d5303ab23b20c75b5dae623818049d774bb22cbd5b9465f94",
-              "sha256": "33a477185117d10d5303ab23b20c75b5dae623818049d774bb22cbd5b9465f94"
+              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:4fce04b72e849bedecb73ab255ce785547c1ca0dc03692fdeb1aff09449088d7",
+              "sha256": "4fce04b72e849bedecb73ab255ce785547c1ca0dc03692fdeb1aff09449088d7"
             },
             "arm64_monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:a407caab7389fc6a24d80fdb986e350fb618b1ffe70081db49e0134c7107fcc4",
-              "sha256": "a407caab7389fc6a24d80fdb986e350fb618b1ffe70081db49e0134c7107fcc4"
+              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:c64d432a8a96d9966f3fd83b103b99e74e37e0de3d093470ce49a16262ea27ca",
+              "sha256": "c64d432a8a96d9966f3fd83b103b99e74e37e0de3d093470ce49a16262ea27ca"
             },
             "sonoma": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:f47837746848e2461ffe06c9f53327596da7f060a3af7d0c9cf2cfdb98548f31",
-              "sha256": "f47837746848e2461ffe06c9f53327596da7f060a3af7d0c9cf2cfdb98548f31"
+              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:f43208a72c2dd68ae928b83ab412cbb475e5aefe9b187a585e0fee51dad9eb90",
+              "sha256": "f43208a72c2dd68ae928b83ab412cbb475e5aefe9b187a585e0fee51dad9eb90"
             },
             "ventura": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:1e6691aaa62a7e42bcf58066623a6fc222417cbc520c051a200434e3dd6ab4e2",
-              "sha256": "1e6691aaa62a7e42bcf58066623a6fc222417cbc520c051a200434e3dd6ab4e2"
+              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:99bd0b5a6ab2ecced963bf1f671c4d05e01d7ebfc438da2b0cb9b65240b7f1eb",
+              "sha256": "99bd0b5a6ab2ecced963bf1f671c4d05e01d7ebfc438da2b0cb9b65240b7f1eb"
             },
             "monterey": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:425f36d7acbc639a4dffa316ee71e759ffc548672e420e94fe86474310e6a8ad",
-              "sha256": "425f36d7acbc639a4dffa316ee71e759ffc548672e420e94fe86474310e6a8ad"
+              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:99b4d59149650a245c251e1f0451b76f24dcfddead80ab86cc59dc92874487ca",
+              "sha256": "99b4d59149650a245c251e1f0451b76f24dcfddead80ab86cc59dc92874487ca"
             },
             "x86_64_linux": {
               "cellar": ":any_skip_relocation",
-              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:e8b7681bccf20ba84eced3265495eecc1584764b8ed3551fbb7c26325b167ef7",
-              "sha256": "e8b7681bccf20ba84eced3265495eecc1584764b8ed3551fbb7c26325b167ef7"
+              "url": "https://ghcr.io/v2/homebrew/core/thefuck/blobs/sha256:ca39bcb4d313412aeb25a11fa8d3925bd6d37007b47b27dbc7c0f12508bb2e60",
+              "sha256": "ca39bcb4d313412aeb25a11fa8d3925bd6d37007b47b27dbc7c0f12508bb2e60"
             }
           }
         }
@@ -1092,6 +1092,18 @@
             }
           }
         }
+      },
+      "koekeishiya/formulae/yabai": {
+      },
+      "koekeishiya/formulae/skhd": {
+      },
+      "yabai": {
+        "version": "6.0.13",
+        "bottle": false
+      },
+      "skhd": {
+        "version": "0.3.9",
+        "bottle": false
       }
     },
     "cask": {
@@ -1208,11 +1220,20 @@
         "options": {
           "full_name": "element"
         }
+      },
+      "raycast": {
+        "version": "1.67.1",
+        "options": {
+          "full_name": "raycast"
+        }
       }
     },
     "tap": {
       "homebrew/cask-versions": {
-        "revision": "2071d711a52d2a47da3c19295007c9cd0f77804b"
+        "revision": "94880e225855fd99f05718ace3ea20ee3893b205"
+      },
+      "koekeishiya/formulae": {
+        "revision": "11d2c31a43538a8108f1120eba4ea6cc8b499c09"
       }
     },
     "mas": {
