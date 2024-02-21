@@ -1,4 +1,5 @@
 local wezterm = require('wezterm')
+local action = wezterm.action
 local colors = require('lua/rose-pine').colors()
 local window_frame = require('lua/rose-pine').window_frame()
 
@@ -16,4 +17,11 @@ return {
     hide_tab_bar_if_only_one_tab = true,
     enable_scroll_bar = false,
     quit_when_all_windows_are_closed = false,
+    keys = {
+        { mods = "OPT", key = "LeftArrow",  action = action.SendKey({ mods = "ALT", key = "b" }) },
+        { mods = "OPT", key = "RightArrow", action = action.SendKey({ mods = "ALT", key = "f" }) },
+        { mods = "CMD", key = "LeftArrow",  action = action.SendKey({ mods = "CTRL", key = "a" }) },
+        { mods = "CMD", key = "RightArrow", action = action.SendKey({ mods = "CTRL", key = "e" }) },
+        { mods = "CMD", key = "Backspace",  action = action.SendKey({ mods = "CTRL", key = "u" }) },
+    },
 }
