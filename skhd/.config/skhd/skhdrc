@@ -23,8 +23,8 @@ shift + alt - 2 : yabai -m window --space 2
 shift + alt - 3 : yabai -m window --space 3
 shift + alt - 4 : yabai -m window --space 4
 
-alt - return : ~/.local/bin/wezterm-new-window.sh
-alt - w : ~/.local/bin/firefox-new-window.sh
+alt - return : ~/.local/bin/wezterm-new-window
+alt - w : ~/.local/bin/firefox-new-window
 
 shift + alt - q : yabai --stop-service
 shift + alt - s : yabai --start-service
