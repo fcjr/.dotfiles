@@ -1162,7 +1162,7 @@
         }
       },
       "signal": {
-        "version": "6.47.1",
+        "version": "6.48.0",
         "options": {
           "full_name": "signal"
         }
@@ -1226,6 +1226,18 @@
         "options": {
           "full_name": "raycast"
         }
+      },
+      "hoppscotch": {
+        "version": "23.12.5-1",
+        "options": {
+          "full_name": "hoppscotch"
+        }
+      },
+      "imageoptim": {
+        "version": "1.9.3",
+        "options": {
+          "full_name": "imageoptim"
+        }
       }
     },
     "tap": {
@@ -1244,6 +1256,10 @@
       "Meshtastic": {
         "id": "1586432531",
         "version": "2.2.22"
+      },
+      "Pure Paste": {
+        "id": "1611378436",
+        "version": "1.10.0"
       }
     },
     "vscode": {

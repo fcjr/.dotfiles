@@ -37,6 +37,8 @@ cask "protonvpn"
 cask "proton-drive"
 cask "keybase"
 cask "raycast"
+cask "hoppscotch"
+cask "imageoptim"
 
 cask "spotify"
 cask "github"
@@ -72,3 +74,4 @@ vscode "johnpapa.vscode-cloak"
 brew "mas" if OS.mac?
 mas "Bitwarden", id: 135_277_8147 if OS.mac?
 mas "Meshtastic", id: 158_643_2531 if OS.mac?
+mas "Pure Paste", id: 161_137_8436 if OS.mac?
