@@ -39,6 +39,9 @@ esac
 ## Secrets
 [[ ! -f ~/.secrets ]] || source ~/.secrets
 
+## Go
+export GOPRIVATE=*
+
 ## FNM (Node Manager)
 eval "$(fnm env)"
 
