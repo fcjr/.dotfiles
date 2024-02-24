@@ -41,5 +41,5 @@
 	autoSetupRemote = true
 [url "git@github.com:"]
 	insteadOf = https://github.com/
-[includeIf "gitdir:~/work/"]
-    path = .work.gitconfig
+[includeIf "gitdir/i:~/work/"]
+	path = .work.gitconfig
