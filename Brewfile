@@ -51,6 +51,10 @@ tap "koekeishiya/formulae"
 brew "yabai"
 brew "skhd"
 
+cask "mactex"
+cask "xelatex"
+brew "pdfcpu"
+
 cask "visual-studio-code"
 vscode "golang.go"
 vscode "rust-lang.rust-analyzer"
