@@ -40,6 +40,9 @@ cask "raycast"
 cask "hoppscotch"
 cask "imageoptim"
 
+cask "displaylink"
+cask "wacom-tablet"
+
 cask "spotify"
 cask "github"
 cask "signal"
@@ -52,7 +55,6 @@ brew "yabai"
 brew "skhd"
 
 cask "mactex"
-cask "xelatex"
 brew "pdfcpu"
 
 cask "visual-studio-code"
