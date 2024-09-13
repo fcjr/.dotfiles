@@ -1,10 +1,9 @@
 local wezterm = require('wezterm')
 local action = wezterm.action
-local colors = require('lua/rose-pine').colors()
 local window_frame = require('lua/rose-pine').window_frame()
 
 return {
-    colors = colors,
+    color_scheme = 'Catppuccin Frappe',
     font_size = 13.0,
     line_height = 1.1,
     font = wezterm.font('MesloLGSDZ Nerd Font'),
