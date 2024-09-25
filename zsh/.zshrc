@@ -1,6 +1,5 @@
 export LANG=en_US.UTF-8
 
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -91,6 +90,14 @@ export PATH="$PATH:$HOME/go/bin"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
+# deno completions
+if [[ ":$FPATH:" != *":/Users/fcjr/.zsh/completions:"* ]]; then export FPATH="/Users/fcjr/.zsh/completions:$FPATH"; fi
+
+# deno
+if [[ -f $HOME/.deno/env ]]; then
+    source $HOME/.deno/env
+fi
+
 function colima-start() {
   colima start --mount-type 9p
 }
@@ -99,3 +106,13 @@ alias vim=nvim
 
 eval "$(zoxide init zsh)"
 alias cd=z
+
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
+export PATH="$PATH:$HOME/flutter/bin"
+eval "$(rbenv init - zsh)"
+
+export ANDROID_HOME="$HOME/Library/Android/sdk"
+export PATH="$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$ANDROID_HOME/cmdline-tools/latest/bin"
