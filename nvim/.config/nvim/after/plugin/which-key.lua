@@ -4,6 +4,8 @@ wk.setup()
 
 local mappings = {
   ["<leader>"] = {
+    k = { "<cmd>lnext<CR>zz", "Next Location List Item" },
+    j = { "<cmd>lprev<CR>zz", "Previous Location List Item" },
     p = {
       name = "Find",
       f = { "<cmd>Telescope find_files<cr>", "Find File" },
@@ -68,6 +70,8 @@ local mappings = {
   K = { "<cmd>lua vim.lsp.buf.hover()<cr>", "Show Hover Information" },
   ["[d"] = { "<cmd>lua vim.diagnostic.goto_prev()<cr>", "Previous Diagnostic" },
   ["]d"] = { "<cmd>lua vim.diagnostic.goto_next()<cr>", "Next Diagnostic" },
+  ["<C-k>"] = { "<cmd>cnext<CR>zz", "Next Quickfix Item" },
+  ["<C-j>"] = { "<cmd>cprev<CR>zz", "Previous Quickfix Item" },
 }
 
 wk.register(mappings)
