@@ -10,6 +10,7 @@ brew "wget"
 brew "thefuck"
 brew "fnm"
 brew "ollama"
+brew "jupyter"
 
 brew "go"
 brew "rustup"
@@ -39,6 +40,7 @@ cask "keybase"
 cask "raycast"
 cask "hoppscotch"
 cask "imageoptim"
+cask "livebook"
 
 cask "displaylink"
 cask "wacom-tablet"
@@ -85,7 +87,7 @@ vscode "austenc.tailwind-docs"
 vscode "tamasfe.even-better-toml"
 vscode "tauri-apps.tauri-vscode"
 vscode "hashicorp.terraform"
-
+vscode "ms-toolsai.jupyter"
 
 brew "mas" if OS.mac?
 mas "Bitwarden", id: 135_277_8147 if OS.mac?
